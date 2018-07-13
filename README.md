@@ -1,2 +1,2 @@
 # simple-java-pact-test
-Simple project that demonstrates Pact testing in Java
+Code for my blog post about [getting started on Pact in Java](https://atashbar.wordpress.com/2018/07/13/how-to-get-started-on-pact-in-java/)

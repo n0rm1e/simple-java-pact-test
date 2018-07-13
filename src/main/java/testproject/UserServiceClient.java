@@ -15,8 +15,6 @@ public class UserServiceClient {
     public User getUser(long userId) {
         String url = endpoint + "/users/" + userId;
         Client client = ClientBuilder.newClient();
-        WebTarget target = client.target(url);
-        User response = target.request(MediaType.APPLICATION_JSON_TYPE).get(User.class);
-        return response;
+        return client.target(url).request(MediaType.APPLICATION_JSON_TYPE).get(User.class);
     }
 }
